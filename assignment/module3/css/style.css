@@ -1,0 +1,23 @@
+.container {
+	margin-left: 0;
+}
+
+/*Tablet and desktop version*/
+@media (min-width: 768px){
+	.collapse .navbar-nav{
+		visibility: hidden;
+	}
+}
+
+@media (max-width: 767px){
+	.nav-link {
+		background-color: white;
+		border-bottom: 1px solid black;
+		color: black !important;
+	}
+
+	.nav-link:focus, .nav-link:hover {
+		font-weight: bold;
+		background-color: #d3d3d3;
+	}
+}
