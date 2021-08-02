@@ -1,23 +1,51 @@
-.container {
-	margin-left: 0;
+.navbar, .navbar .container {
+	padding: 0;
+	margin: 0;
+}
+
+.container .navbar-brand {
+	margin-left: 15px;
+}
+
+.container .navbar-toggler {
+	margin-right: 5px;
+}
+
+h1.text-center{
+	margin: 10px 0px;
+}
+
+p.text-center {
+	margin: 2px;
+}
+
+p.sectiontext {
+	margin-right: auto;
+	margin-left: auto;
 }
 
 /*Tablet and desktop version*/
-@media (min-width: 768px){
+@media (min-width: 576px){
 	.collapse .navbar-nav{
 		visibility: hidden;
 	}
 }
 
-@media (max-width: 767px){
+@media (max-width: 575px){
 	.nav-link {
-		background-color: white;
-		border-bottom: 1px solid black;
 		color: black !important;
 	}
 
 	.nav-link:focus, .nav-link:hover {
 		font-weight: bold;
 		background-color: #d3d3d3;
+	}
+
+ 	.col-xs-12 {
+	  width: 100%;
+	}
+
+	.col-xs-12 .container {
+		max-width: 85%;
 	}
 }
